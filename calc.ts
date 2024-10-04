@@ -49,7 +49,7 @@ class DayTradingForecaster {
 
     constructor(
         expectedProfitPerShare: number = 0.05, 
-        costPerShare: number = 4.0, 
+        costPerShare: number = 3.0, 
         initialBalance: number = 1000.0, 
         numTradingDays: number = 50, 
         accountType: AccountType = AccountType.Cash

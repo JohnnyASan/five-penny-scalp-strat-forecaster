@@ -25,5 +25,5 @@ class Main {
 }
 
 const main =new Main()
-// main.calculate_working();
-main.calculate_error();
+main.calculate_working();
+//main.calculate_error();
