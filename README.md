@@ -17,8 +17,8 @@ Ensure that node and npm are installed on your computer.
 Then run the following commands in order:
 
 1. `npm install -g typescript`
-2. `tsc calc.ts`
-3. `node calc.js`
+2. `npm install -g tsx`
+3. `tsx .\calc.ts`
 
 # Useful Websites
 
