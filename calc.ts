@@ -1,7 +1,10 @@
+
+// This function rounds to a whole number.
 function roundToWhole(n : number) {
     return Math.floor(Number((n).toFixed(2)));
 }
 
+// This function rounds to 2 decimal places since we are dealing with currency.
 function round(number: number, precision: number) {
     if (precision < 0) {
       let factor = Math.pow(10, precision);
@@ -12,11 +15,13 @@ function round(number: number, precision: number) {
         "e-" + precision);
 }
 
+// These are the types of trading accounts that can used.
 enum AccountType {
     Cash,
     Margin
 }
 
+// This class is for representing individual trading days.
 class TradingDayResult {
     id: number;
     balance: number;
@@ -33,6 +38,7 @@ class TradingDayResult {
     }
 }
 
+// This is the class that generates the forecast
 class DayTradingForecaster {
     expectedProfitPerShare: number;
     costPerShare: number;
