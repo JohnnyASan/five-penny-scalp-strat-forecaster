@@ -1,15 +1,10 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This project uses a recursive equation to illustrate how impactful consistent small gains can be when day trading.
 
-{Provide a description of the software that you wrote to demonstrate the TypeScript language.}
-
-{Describe your purpose for writing this software.}
+The code utilizes async/await, error handling, lists, classes, enums, and printing to the console.
 
 [Software Demo Video]()
-
-
-[Software Demo Video](http://youtube.link.goes.here)
 
 ## Development Environment
 

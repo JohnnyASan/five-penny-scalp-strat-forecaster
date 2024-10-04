@@ -48,6 +48,8 @@ class DayTradingForecaster {
         numTradingDays: number = 50, 
         accountType: AccountType = AccountType.Cash
     ) {
+        if (expectedProfitPerShare <= 0 || costPerShare <= 0 || initialBalance <=0 || numTradingDays <= 0)
+            throw new RangeError('Values for all numerical fields must be greater than 0');
         this.expectedProfitPerShare = expectedProfitPerShare;
         this.costPerShare = costPerShare;
         this.initialBalance = initialBalance;
@@ -56,7 +58,7 @@ class DayTradingForecaster {
         this.results = [];
     }
 
-    generate(n = 1, previousDayResult: TradingDayResult | undefined = undefined) {
+    async generate(n = 1, previousDayResult: TradingDayResult | undefined = undefined) {
         let currentDayResult = new TradingDayResult();
         
         let startBalance = (previousDayResult != undefined ? previousDayResult.balance : this.initialBalance);
@@ -72,10 +74,8 @@ class DayTradingForecaster {
     }
 }
 
-let forecaster = new DayTradingForecaster();
-forecaster.generate();
+export { DayTradingForecaster };
 
-console.log(forecaster.results);
 
 
 
